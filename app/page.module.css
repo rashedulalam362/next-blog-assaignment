@@ -6,7 +6,27 @@
   padding: 6rem;
   min-height: 100vh;
 }
+.heading{
+  color:red;
+  text-align: center;
+ 
+}
+.link{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+  margin-top:20px;
+  /* Adjustments */
+  max-width: 50%; /* You can adjust this value */
+  margin: 0 auto; /* Center horizontally */
+  /* Optional - if you want the height to be based on content */
+  height: auto;
 
+}
 .description {
   display: inherit;
   justify-content: inherit;
