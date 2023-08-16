@@ -1,21 +1,18 @@
-import { useRouter } from 'next/router';
-import blogData from '../blogData.json';
+import React from 'react'
+import blogData from '../../blogData.json'
+function page({ params }) {
 
-function BlogDetailsPage() {
-  const router = useRouter();
-  const { slug } = router.routeParams;
-  const selectedPost = blogData.find(post => post.slug === slug);
-
-  if (!selectedPost) {
-    return <div>Blog post not found</div>;
-  }
-
+  const blogPost=blogData.find((blog)=>blog.id === parseInt(params.slug))
+ 
   return (
-    <div>
-      <h1>Blog Details</h1>
-      <h2>Name: {selectedPost.title}</h2>
-      <p>{selectedPost.content}</p>
+   
+    <div> post blog: {params.slug}
+      <h2> {blogPost.title}t</h2>
+      <p>{blogPost.content}</p>
+      <p> {blogPost.date}</p>
     </div>
-  );
+
+  )
 }
-export default BlogDetailsPage;
+
+export default page

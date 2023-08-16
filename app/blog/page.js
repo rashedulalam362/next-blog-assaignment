@@ -13,6 +13,7 @@ function page() {
         <Link href={`/blog/${blog.id}`}>
           
               <h2>{blog.title}</h2>
+              <p>{blog.content}</p>
           
           </Link>
        </div>
