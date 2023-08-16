@@ -11,6 +11,32 @@
   text-align: center;
  
 }
+
+.card{
+  width: 60%;
+  height: 60%;
+  margin: 0 auto; /* Center horizontally */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Remaining styles */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.card-content {
+  padding: 16px;
+}
+
+.card-content h2 {
+  margin-top: 0;
+}
+
+.card-content p {
+  margin: 8px 0;
+}
+
 .link{
   display: flex;
   justify-content: center;
